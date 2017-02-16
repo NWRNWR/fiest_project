@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	window.onload=function(){ 
+		var qwe = document.getElementById('qwe');
+		
+		console.log(qwe);
+		qwe.onclick = function(){
+			var ee = document.getElementById("div1");
+			var val = ee.innerText;
+			var str = val+"1234qwe";
+			ee.innerHTML =str;
+			ee.style.backgroundColor="red";
+			ee.style.width="60px";
+			ee.style.height="60px";
+		}
+
+	} 
+	
+</script>
+
+</head>
+
+<body>
+<div id="div1" style="height:100px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;">123</div>
+<button id='qwe' style="height: 30px;width:40px"></button>
+<br>
+
+
+
+</body>
+</html>
